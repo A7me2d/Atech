@@ -56,6 +56,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .ellas {
   // width: 189px;
   white-space: nowrap;
@@ -63,21 +64,21 @@
   text-overflow: ellipsis;
 }
 
-.ngx-pagination{
-margin-right: 0 !important;
-padding: 0 !important;
+.ngx-pagination {
+  margin-right: 0 !important;
+  padding: 0 !important;
 }
 
 
 
-.allinout h4{
-font-weight: 600;
-padding: 5px;
-font-size: 15px;
-color: #333333;
+.allinout h4 {
+  font-weight: 600;
+  padding: 5px;
+  font-size: 15px;
+  color: #333333;
 }
 
-select{
+select {
   font-weight: 500;
   font-size: 15px;
   color: #000000;
@@ -86,3 +87,78 @@ select{
   border-radius: 6px;
   padding: 5px;
 }
+
+
+@media (max-width: 998px) {
+  #table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    white-space: nowrap; /* يمنع العناوين من النزول لأسطر جديدة */
+  }
+
+  #table-header div {
+    flex: 1;
+    min-width: 12%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+  }
+#table-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  white-space: nowrap; /* يمنع العناوين من النزول لأسطر جديدة */
+
+}
+#table-body div{
+  flex: 1;
+  min-width: 12%;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+}
+
+@media (max-width: 768px) {
+  #table-header {
+    gap: 2px;
+    font-size: 12px;
+  }
+
+  #table-header div {
+    min-width: 10%; /* تصغير العرض أكثر للحفاظ على المساحة */
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  #table-body {
+    gap: 2px;
+    font-size: 12px;
+  }
+
+  #table-body div {
+    min-width: 10%; /* تصغير العرض أكثر للحفاظ على المساحة */
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  #table-header div {
+    min-width: 9%; /* تصغير أكبر للعناوين على الشاشات الصغيرة جدًا */
+    font-size: 11px;
+  }
+
+  #table-body div {
+    min-width: 9%; /* تصغير أكبر للعناوين على الشاشات الصغيرة جدًا */
+    font-size: 11px;
+  }
+}
+
