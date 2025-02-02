@@ -58,7 +58,6 @@
 }
 
 .ellas {
-  // width: 189px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,15 +95,16 @@ select {
     align-items: center;
     gap: 5px;
     text-align: center;
-    white-space: nowrap; /* يمنع العناوين من النزول لأسطر جديدة */
+    white-space: nowrap;
   }
 
   #table-header div {
     flex: 1;
     min-width: 12%;
-    font-size: 14px;
+    font-size: 11px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+  word-wrap: break-word;
     padding: 5px;
   }
 #table-body{
@@ -113,8 +113,6 @@ select {
   align-items: center;
   gap: 5px;
   text-align: center;
-  white-space: nowrap; /* يمنع العناوين من النزول لأسطر جديدة */
-
 }
 #table-body div{
   flex: 1;
@@ -122,6 +120,8 @@ select {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
+white-space: normal;
+  word-wrap: break-word;
   padding: 5px;
 }
 }
@@ -133,7 +133,7 @@ select {
   }
 
   #table-header div {
-    min-width: 10%; /* تصغير العرض أكثر للحفاظ على المساحة */
+    min-width: 10%;
     font-size: 12px;
     padding: 3px;
   }
@@ -144,7 +144,7 @@ select {
   }
 
   #table-body div {
-    min-width: 10%; /* تصغير العرض أكثر للحفاظ على المساحة */
+    min-width: 10%;
     font-size: 12px;
     padding: 3px;
   }
@@ -152,12 +152,12 @@ select {
 
 @media (max-width: 480px) {
   #table-header div {
-    min-width: 9%; /* تصغير أكبر للعناوين على الشاشات الصغيرة جدًا */
+    min-width: 9%;
     font-size: 11px;
   }
 
   #table-body div {
-    min-width: 9%; /* تصغير أكبر للعناوين على الشاشات الصغيرة جدًا */
+    min-width: 9%;
     font-size: 11px;
   }
 }
