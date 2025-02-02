@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+html {
+  direction: rtl;
+  text-align: right;
+}
+
+
+body {
+  font-family: 'Neo Sans Arabic', sans-serif;
+  background: #f8f8f8;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  src: url('../src/assets/fonts/alfont_com_AlFont_com_NeoSansArabic.ttf') format('truetype');
+}
+
+.ngx-pagination {
+  text-align: end !important;
+  padding: 0 !important;
+}
+
+.ngx-pagination .pagination-next a:after,
+.ngx-pagination .pagination-next.disabled:after {
+  content: '>' !important;
+}
+
+.ngx-pagination .pagination-previous a:before,
+.ngx-pagination .pagination-previous.disabled:before {
+  content: '<' !important;
+}
+
+.ngx-pagination .current {
+  background: #3e97ff !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+}
+
+///////////////////////////////
+
+
+.p-tieredmenu.p-tieredmenu-overlay {
+  color: black !important;
+  background-color: #ffffff !important;
+}
+
+.p-tieredmenu .p-menuitem>.p-menuitem-content .p-menuitem-link {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.p-menuitem:first-child .p-menuitem-text {
+  font-family: 'neo sans arabic' !important;
+
+  color: rgb(0, 0, 0) !important;
+}
+
+.p-menuitem:last-child .p-menuitem-text {
+  font-family: 'neo sans arabic' !important;
+  color: red !important;
+}
+
+.p-tieredmenu-root-list {
+  text-align: center !important;
+}
+
+#pn_id_2_list {
+  padding: 0px !important;
+  text-align: center !important;
+}
+
+.p-tieredmenu .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus>.p-menuitem-content {
+  background-color: #ffffff !important;
+  font-family: 'neo sans arabic' !important;
+}
+
+.p-tieredmenu .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus>.p-menuitem-content:hover {
+  background-color: #cfcece !important;
+}
+
+.p-tieredmenu .p-menuitem>.p-menuitem-content .p-menuitem-link:hover {
+  background-color: #cfcece !important;
+}
+
+.fa-link-slash {
+  padding-left: 10px !important;
+  color: red !important;
+}
+
+.pi-pencil {
+  padding-left: 10px !important;
+  color: #6b7280 !important;
+}

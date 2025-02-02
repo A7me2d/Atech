@@ -1,0 +1,88 @@
+* {
+  font-family: 'neo sans arabic';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.row {
+  background-color: #ffffff;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+  }
+}
+
+
+.row {
+  border-radius: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid #e5e7eb;
+}
+
+
+
+#table-header {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2 !important;
+  font-weight: 400;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+#table-body {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff !important;
+  font-weight: 400;
+
+  font-size: 14px;
+  color: #1c1c2b;
+
+  #date {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+#name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ellas {
+  // width: 189px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ngx-pagination{
+margin-right: 0 !important;
+padding: 0 !important;
+}
+
+
+
+.allinout h4{
+font-weight: 600;
+padding: 5px;
+font-size: 15px;
+color: #333333;
+}
+
+select{
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 5px;
+}

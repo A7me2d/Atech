@@ -1,0 +1,45 @@
+
+
+*{
+   text-align: right;
+}
+
+img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.card{
+  background-color: #ffffff !important;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+
+#table{
+  color: black !important;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff !important;
+  tr{
+    color: black !important;
+    border-radius: 6px;
+    background-color: #ffffff !important;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+  }
+  th{
+    color: black !important;
+    border-radius: 6px;
+    background-color: #ffffff !important;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+.p-paginator {
+    background-color: #0966e9 !important;
+}
+

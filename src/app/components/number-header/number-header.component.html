@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-hashtag p-2"></i>{{numberdisplay}}</a>
+    <div>
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" aria-current="page"><i class="fa-solid fa-xmark p-2"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="number-header" class="my-3">
+  <div class="container" id="back-header">
+    <div class="row">
+      <div class="head my-3 d-flex justify-content-between">
+        <div class="right">{{phoneNumber}} <button class="btn mx-1">{{phonetext}}</button></div>
+        <div class="left">
+          <i class="fa-solid fa-ellipsis" (click)="menu.toggle($event)" style="cursor: pointer;"></i>
+          <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="one" class=" col-lg-3 col-6 mt-3 text-center">
+        <div class="protocol">
+          <h1>{{protocol}}</h1>
+          <p>{{protocolName}}</p>
+        </div>
+      </div>
+      <div id="light" class=" col-lg-3 col-6 mt-3 text-center">
+        <div class="country">
+          <h1>{{contermain}}</h1>
+          <p><img [src]="countryFlag" alt="Country Flag">{{country}}</p>
+        </div>
+
+
+      </div>
+      <div id="one" class="  col-lg-3 col-6 mt-3 text-center">
+        <div class="client">
+          <h1>{{cilint}}</h1>
+          <p pTooltip="{{currentClient}}" tooltipPosition="top" class="ellipsis"><img [src]="clientLogo"
+              alt="Client Logo">{{currentClient}}</p>
+        </div>
+
+
+      </div>
+      <div class=" col-lg-3 col-6 mt-3 text-center">
+        <div class="extensions">
+          <h1>{{extensions}}</h1>
+          <p>{{extensionNumber}}</p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div id="one" class=" col-lg-3 col-6 mt-3 text-center">
+
+
+        <div class="date">
+          <h1>{{lastUpdate}}</h1>
+          <p>{{lastUpdateDate}}</p>
+        </div>
+
+      </div>
+      <div id="light" class=" col-lg-3 col-6 mt-3 text-center">
+
+        <div class="balance">
+          <h1>{{balancerate}}</h1>
+          <p>{{balance}}</p>
+        </div>
+      </div>
+      <div id="one" class=" col-lg-3 col-6 mt-3 text-center">
+
+
+        <div class="curanumber">
+          <h1>{{curanumber}}</h1>
+          <p>{{canumber}}</p>
+        </div>
+      </div>
+      <div class=" col-lg-3 col-6 mt-3 text-center">
+
+
+        <div class="balanecesall">
+          <h1>{{balanecesall}}</h1>
+          <p>{{balanceNumber}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

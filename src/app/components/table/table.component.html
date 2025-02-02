@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <ul>
+      <li class="list-group-item mt-4">
+        <div class="row d-flex justify-content-between" id="table-header">
+          <div class="col-2"><strong>العميل</strong></div>
+          <div class="col-2"><strong>تاريخ التعيين</strong></div>
+          <div class="col-2"><strong>تاريخ الإلغاء التعيين</strong></div>
+          <div class="col-2"><strong>المسؤول عن التعيين</strong></div>
+          <div class="col-1"><strong>الدقائق المحلية</strong></div>
+          <div class="col-1"><strong>الدقائق الدولية</strong></div>
+          <div class="col-1"><strong>المبلغ</strong></div>
+        </div>
+      </li>
+
+      <li class="list-group-item"
+        *ngFor="let row of tableData | paginate: { itemsPerPage: itemsPerPage, currentPage: page }">
+        <div class="row d-flex justify-content-between" id="table-body">
+          <div class="col-2 ellas">
+            <img [src]="row.clientLogo" alt="Client Logo" class="client-logo">
+            {{ row.client }}
+          </div>
+          <div id="date" class="col-2">{{ row.assignDate }}</div>
+          <div id="date" class="col-2">{{ row.cancelDate || '-' }}</div>
+          <div id="name" class="col-2">{{ row.assignee }}</div>
+          <div id="date" class="col-1">{{ row.localMinutes }}</div>
+          <div id="date" class="col-1">{{ row.internationalMinutes }}</div>
+          <div class="col-1">{{ row.amount }} ج.م</div>
+        </div>
+      </li>
+    </ul>
+    <div class="selected d-flex justify-content-between align-items-center">
+      <div class="allinout d-flex justify-content-center align-items-center">
+        <h4>عرض</h4>
+        <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange()">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+       <h4>من اصل 55</h4>
+      </div>
+
+      <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel=""></pagination-controls>
+
+    </div>
+  </div>
+</div>

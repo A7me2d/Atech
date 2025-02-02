@@ -1,0 +1,32 @@
+
+<div class="container">
+  <p-table [value]="customers" [paginator]="true" [rows]="5" [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[5, 10, 20]" [totalRecords]="customers.length" id="table">
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width:auto">العميل</th>
+        <th style="width:auto">تاريخ التعيين</th>
+        <th style="width:auto">تاريخ الإلغاء التعيين</th>
+        <th style="width:auto">المسؤول عن التعيين</th>
+        <th style="width:auto">الدقائق المحلية</th>
+        <th style="width:auto">الدقائق الدولية</th>
+        <th style="width:auto">المبلغ</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customer>
+      <tr>
+        <td>
+          <img [src]="customer.clientLogo" alt="Client Logo">
+          {{ customer.client }}
+        </td>
+        <td>{{ customer.client }}</td>
+        <td>{{ customer.cancelDate || '-' }}</td>
+        <td>{{ customer.assignee }}</td>
+        <td>{{ customer.localMinutes }}</td>
+        <td>{{ customer.internationalMinutes }}</td>
+        <td>{{ customer.amount }} ج.م</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
